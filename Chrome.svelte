@@ -214,7 +214,7 @@
   update(startColor, false);
 </script>
 
-<div class="color-picker">
+<div class="color-picker {$$props.class}">
   
   <div class="saturation-value-wrap">
     <SaturationValue {h} {s} {v} on:input={(event) => update({h, s: event.detail.s, v: event.detail.v, a})} />
